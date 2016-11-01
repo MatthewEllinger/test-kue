@@ -1,0 +1,23 @@
+{
+  "name": "test-kue",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "export REDIS=redis://192.168.99.100:6379 && node app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jhuntoo/test-kue.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jhuntoo/test-kue/issues"
+  },
+  "homepage": "https://github.com/jhuntoo/test-kue#readme",
+  "dependencies": {
+    "kue": "0.11.4"
+  }
+}

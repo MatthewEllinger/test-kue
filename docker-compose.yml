@@ -1,0 +1,13 @@
+dashboard:
+  image: pavlov/kue-dashboard
+  ports:
+      - "80:80"
+  links:
+    - redis
+  environment:
+    - REDIS_URL=redis://redis:6379
+redis:
+  image: redis
+  restart: always
+  ports:
+    - "6379:6379"
