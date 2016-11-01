@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "export REDIS=redis://192.168.99.100:6379 && node app.js",
+    "worker": "export REDIS=redis://192.168.99.100:6379 && node worker.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
