@@ -7,9 +7,10 @@ const queue = kue.createQueue({
 
 
 var job = queue.create('email', {
-    title: 'welcome email for tj'
-    , to: 'tj@learnboost.com'
-    , template: 'welcome-email'
+    emailType: 'user.registering',
+    email: 'useremail@test.com',
+    code: '12345',
+    websiteUrl: 'http://test.mustrace.com'
 }).save( function(err){
     if( !err ) console.log( job.id );
 });
